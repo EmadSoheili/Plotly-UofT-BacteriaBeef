@@ -17,7 +17,7 @@
 
 <body>
 
-  <div class="container bg-dark">
+  <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center bg-dark">
         <h1>Belly Button Biodiversity Dashboard</h1>
@@ -31,12 +31,12 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3 bg-dark">
-        <div class="well">
+      <div class="col-md-3">
+        <div class="well" style="color:rgb(19, 92, 164)">
           <h5>Test Subject ID No.:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
+        <div class="panel panel-primary" style="color:rgb(19, 92, 164)">
           <div class="panel-heading">
             <h5> </h5>
             <h5 class="panel-title">Demographic Info</h5>
@@ -44,15 +44,15 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-9 bg-dark">
+      <div class="col-md-9">
         <div id="bubble"></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 bg-dark">
+      <div class="col-md-6">
         <div id="bar"></div>
       </div>
-      <div class="col-md-6 bg-dark">
+      <div class="col-md-6">
         <div id="gauge"></div>
       </div>
     </div>
