@@ -97,7 +97,10 @@ function buildCharts(sample) {
       yaxis: {
         tickvals: [0,1,2,3,4,5,6,7,8,9],
         ticktext: yticks.reverse()
-      }
+      },
+      paper_bgcolor: 'rgba(0,0,0,0)',
+      plot_bgcolor: 'rgba(0,0,0,0)',
+      font: {color: 'white'}
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot('bar', barData, barLayout);
@@ -121,7 +124,9 @@ function buildCharts(sample) {
       title: 'Bacteria Cluster Per Sample',
       hovermode: 'closest',
       xaxis: {title: 'OTU ID'},
-
+      paper_bgcolor: 'rgba(0,0,0,0)',
+      plot_bgcolor: 'rgba(0,0,0,0)',
+      font: {color: 'white'}
     };
 
     // 3. Use Plotly to plot the data with the layout.
@@ -164,7 +169,10 @@ function buildCharts(sample) {
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-     title: 'Belly Button Washing Frequency'
+     title: 'Belly Button Washing Frequency',
+     paper_bgcolor: 'rgba(0,0,0,0)',
+     plot_bgcolor: 'rgba(0,0,0,0)',
+     font: {color: 'white'}
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
